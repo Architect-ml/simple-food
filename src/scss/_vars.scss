@@ -3,7 +3,28 @@ $content-width: 1170px;
 $container-offset: 15px;
 $container-width: calc($content-width + ($container-offset * 2));
 
-// Colors
-$main-color: #ffffff;
+// Main colors
+$color-accent: #ff6838;
+$color-primary: #31352b;
+$color-primary-lt: #505050;
+$color-secondary: #363853;
+$color-tertiary: #c2c2c2;
+$color-tertiary-lt: #ececec;
+$color-tertiary-ltr: #f9faff;
+$color-neutral-lt: #ffffff;
+$color-neutral-dk: #000000;
+
+// Pseudo-classes colors
+$color-placeholder: rgba($color-tertiary, 0.9);
+$color-pseudo-accent: #ff7a50;
+$color-pseudo-accent-tr: rgba(#ff7a50, 0.1);
+$color-pseudo-border: rgba($color-accent, 0.7);
+$color-pseudo-shadow: rgba($color-accent, 0.2);
+$color-pseudo-shadow-dk: rgba($color-secondary, 0.5);
+$color-pseudo-lt: #fff2ed;
 
 // Fonts
+$font-family: 'Rubik', sans-serif;
+
+// Transition
+$transition-time: 0.3s;

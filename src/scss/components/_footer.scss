@@ -1,0 +1,125 @@
+.footer {
+  &__content {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__subscribe {
+    width: 200px;
+    margin-right: 70px;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__form {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 13px;
+    border: 1px solid $color-tertiary;
+    border-radius: 5px;
+    background-color: $color-neutral-lt;
+  }
+
+  &__form-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn-svg {
+    margin-right: 15px;
+  }
+
+  &__list-nav {
+    margin-right: 70px;
+  }
+
+  &__item-nav {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  &__item-contact {
+    margin-bottom: 15px;
+  }
+
+  &__link-contact {
+    font-size: 16px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link-contact::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__link-contact--point::before {
+    background-image: url('../images/icons/icon-point.svg');
+  }
+
+  &__link-contact--phone::before {
+    background-image: url('../images/icons/icon-phone.svg');
+  }
+
+  &__link-contact--letter::before {
+    background-image: url('../images/icons/icon-letter.svg');
+  }
+
+  &__list-social {
+    display: flex;
+  }
+
+  &__item-social {
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+
+  &__link-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+    background-color: $color-tertiary-lt;
+
+    &:active {
+      color: $color-pseudo-accent;
+    }
+  }
+
+  &__copyright {
+    border: 1px solid rgba($color-tertiary, 0.2);
+  }
+
+  &__copyright-text {
+    padding: 30px 0;
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+  }
+}

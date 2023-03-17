@@ -8,7 +8,6 @@ const sass = gulpSass(dartSass);
 
 export const scss = () => {
   return app.gulp.src(app.path.src.scss, { sourcemaps: app.isDev })
-    .pipe(app.plugins.replace(/@img\//g, '../images/'))
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 3 versions'],
