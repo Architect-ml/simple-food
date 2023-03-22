@@ -1,3 +1,5 @@
-import * as flsFunctions from './modules/functions.js';
+import * as functions from './modules/functions.js';
+import * as tabs from './modules/tabs.js';
+
 
 

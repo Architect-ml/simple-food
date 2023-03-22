@@ -26,11 +26,24 @@
     border: 1px solid $color-tertiary;
     border-radius: 5px;
     background-color: $color-neutral-lt;
+    transition: box-shadow $transition-time, color $transition-time;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+
+    &:focus:not(:active) {
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+
+    &:hover::placeholder {
+      color: $color-secondary;
+    }
   }
 
   &__form-btn {
     width: 100%;
-    padding: 13px;
+    padding: 13px 38px;
     border-radius: 5px;
     white-space: nowrap;
     display: flex;
@@ -38,23 +51,34 @@
     align-items: center;
   }
 
-  &__btn-svg {
+  &__form-icon {
     margin-right: 15px;
   }
 
   &__list-nav {
     margin-right: 70px;
+    display: grid;
+    grid-template-columns: 223px 159px 187px;
   }
 
   &__item-nav {
-    margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.01em;
   }
 
-  &__item-contact {
+  &__list-contact {
     margin-bottom: 15px;
+  }
+
+  &__item-contact {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__icon-contact {
+    margin-right: 10px;
   }
 
   &__link-contact {
@@ -62,29 +86,6 @@
     line-height: 2;
     display: flex;
     align-items: center;
-  }
-
-  &__link-contact::before {
-    content: '';
-    width: 24px;
-    height: 24px;
-    margin-right: 7px;
-    display: inline-block;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  &__link-contact--point::before {
-    background-image: url('../images/icons/icon-point.svg');
-  }
-
-  &__link-contact--phone::before {
-    background-image: url('../images/icons/icon-phone.svg');
-  }
-
-  &__link-contact--letter::before {
-    background-image: url('../images/icons/icon-letter.svg');
   }
 
   &__list-social {

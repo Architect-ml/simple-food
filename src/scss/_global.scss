@@ -53,6 +53,14 @@ body {
   color: $color-secondary;
 }
 
+.svg-stroke {
+  stroke: currentColor;
+}
+
+.svg-fill {
+  fill: currentColor;
+}
+
 .logo {
   transition: border-radius $transition-time, box-shadow $transition-time, opacity $transition-time;
 
@@ -88,7 +96,7 @@ body {
   }
 }
 
-.button {
+.btn {
   padding: 7px 16px;
   border-radius: 6px;
   background-color: $color-accent;
@@ -96,6 +104,11 @@ body {
   line-height: 1.3;
   color: $color-neutral-lt;
   transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
+
+  &--big {
+    padding: 12px 32px;
+    font-size: 18px;
+  }
 
   &:focus:not(:active) {
     background-color: $color-pseudo-accent-tr;
@@ -115,23 +128,7 @@ body {
   }
 }
 
-.input {
-  transition: box-shadow $transition-time, color $transition-time;
-
-  &::placeholder {
-    color: $color-placeholder;
-  }
-
-  &:focus:not(:active) {
-    box-shadow: 0 0 0 2px $color-pseudo-border;
-  }
-
-  &:hover::placeholder {
-    color: $color-secondary;
-  }
-}
-
-.btn-svg {
+.btn-icon {
   transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
 
   &:focus:not(:active) {
@@ -149,10 +146,38 @@ body {
   }
 }
 
-.svg-stroke {
-  stroke: currentColor;
-}
+.card-food {
+  height: 100%;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-neutral-lt;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px $color-tertiary-lt;
+  transition: box-shadow $transition-time;
 
-.svg-fill {
-  fill: currentColor;
+  &__img {
+    margin: 0 auto 10px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $color-secondary;
+  }
+
+  &:hover:not(:active) {
+    box-shadow: 0 0 0 1px $color-accent;
+  }
 }

@@ -1,11 +1,7 @@
 .header {
-  position: absolute;
-  z-index: 20;
-  right: 0;
-  left: 0;
   padding: 60px 0;
 
-  &__inner {
+  &__container {
     display: flex;
     align-items: center;
   }
@@ -13,13 +9,40 @@
   &__logo {
     margin-right: auto;
   }
+}
 
-  &__list-btn {
+.menu {
+  margin-right: 50px;
+
+  &__list {
     display: flex;
+    align-items: center;
   }
 
-  &__item-btn:not(:last-child) {
-    margin-right: 10px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.2;
+
+    &--active {
+      color: $color-accent;
+      pointer-events: none;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
   &__btn {
@@ -59,26 +82,5 @@
     line-height: 1.2;
     color: $color-neutral-lt;
     transition: background-color $transition-time, color $transition-time;
-  }
-}
-
-.menu {
-  margin-right: 50px;
-
-  &__list {
-    display: flex;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 45px;
-  }
-
-  &__link {
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  &__link--active {
-    color: $color-accent;
   }
 }

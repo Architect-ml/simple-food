@@ -47,10 +47,12 @@
   &__btn--active {
     background-color: $color-accent;
     color: $color-neutral-lt;
+    pointer-events: none;
   }
 
-  &__btn-svg {
+  &__icon-btn {
     margin-right: 10px;
+    pointer-events: none;
   }
 
   &__list-card {
@@ -58,9 +60,18 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
+
   }
 
-  &__btn-more {
+  &__item-card {
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__link-more {
     color: $color-secondary;
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -68,39 +79,5 @@
     &:hover {
       text-decoration: none;
     }
-  }
-}
-
-.card-food {
-  height: 100%;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: $color-neutral-lt;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px $color-tertiary-lt;
-
-  &__img {
-    margin: 0 auto 10px;
-  }
-
-  &__title {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 1.2;
-  }
-
-  &__price {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.4;
-    color: $color-secondary;
-  }
-
-  &__btn {
-    align-self: center;
   }
 }

@@ -1,9 +1,9 @@
 // Basic connections
-@import 'reset';
 @import 'fonts';
+@import 'reset';
+@import 'libs';
 @import 'vars';
 @import 'global';
-@import 'media';
 
 // Component connections
 @import './components/header';

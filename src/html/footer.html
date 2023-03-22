@@ -2,16 +2,15 @@
   <div class="container">
     <div class="footer__content">
       <div class="footer__subscribe">
-        <a class="footer__logo logo" href="#hero">
+        <a class="footer__logo logo" href="#header">
           <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="200" height="39" loading="lazy">
         </a>
         <form class="footer__form">
-          <label class="sr-only" for="email">
-            Ваш email
+          <label class="footer__form-lable" aria-label="Ваш email">
+            <input class="footer__form-input" name="email" type="email" placeholder="Ваш email" pattern="^[а-яА-ЯёЁa-zA-Z0-9\s]+$" required oninvalid="setCustomValidity('Пожалуйста, введите Ваш email')" oninput="setCustomValidity('')">
           </label>
-          <input class="footer__form-input input" id="email" name="email" type="email" placeholder="Ваш email" pattern="^[а-яА-ЯёЁa-zA-Z0-9\s]+$" required oninvalid="setCustomValidity('Пожалуйста, введите Ваш email')" oninput="setCustomValidity('')">
-          <button class="footer__form-btn button" type="submit">
-            <svg class="footer__btn-svg svg-fill" width="15" height="14">
+          <button class="footer__form-btn btn" type="submit">
+            <svg class="footer__form-icon svg-fill" width="15" height="14">
               <use xlink:href="./images/sprites/icons.svg#icon-airplane"></use>
             </svg>
             Подписаться
@@ -26,24 +25,17 @@
         </li>
         <li class="footer__item-nav">
           <a class="footer__link-nav link" href="#">
-            Продукты
-          </a>
-        </li>
-        <li class="footer__item-nav">
-          <a class="footer__link-nav link" href="#">
-            Блюда
-          </a>
-        </li>
-        <li class="footer__item-nav">
-          <a class="footer__link-nav link" href="#">
-            Меню
-          </a>
-        </li>
-      </ul>
-      <ul class="footer__list-nav">
-        <li class="footer__item-nav">
-          <a class="footer__link-nav link" href="#">
             О нас
+          </a>
+        </li>
+        <li class="footer__item-nav">
+          <a class="footer__link-nav link" href="#">
+            Скачать приложение
+          </a>
+        </li>
+        <li class="footer__item-nav">
+          <a class="footer__link-nav link" href="#">
+            Продукты
           </a>
         </li>
         <li class="footer__item-nav">
@@ -53,29 +45,32 @@
         </li>
         <li class="footer__item-nav">
           <a class="footer__link-nav link" href="#">
-            Партнеры
-          </a>
-        </li>
-        <li class="footer__item-nav">
-          <a class="footer__link-nav link" href="#">
-            ЧаВо
-          </a>
-        </li>
-      </ul>
-      <ul class="footer__list-nav">
-        <li class="footer__item-nav">
-          <a class="footer__link-nav link" href="#">
-            Скачать приложение
-          </a>
-        </li>
-        <li class="footer__item-nav">
-          <a class="footer__link-nav link" href="#">
             Блог
           </a>
         </li>
         <li class="footer__item-nav">
           <a class="footer__link-nav link" href="#">
+            Блюда
+          </a>
+        </li>
+        <li class="footer__item-nav">
+          <a class="footer__link-nav link" href="#">
+            Партнеры
+          </a>
+        </li>
+        <li class="footer__item-nav">
+          <a class="footer__link-nav link" href="#">
             Что нового?
+          </a>
+        </li>
+        <li class="footer__item-nav">
+          <a class="footer__link-nav link" href="#">
+            Меню
+          </a>
+        </li>
+        <li class="footer__item-nav">
+          <a class="footer__link-nav link" href="#">
+            ЧаВо
           </a>
         </li>
         <li class="footer__item-nav">
@@ -87,39 +82,48 @@
       <address class="footer__address">
         <ul class="footer__list-contact">
           <li class="footer__item-contact">
-            <a class="footer__link-contact link footer__link-contact--point" href="https://goo.gl/maps/dEmzSAdLBjNBYEEZ8" target="_blank">
+            <a class="footer__link-contact link" href="https://goo.gl/maps/dEmzSAdLBjNBYEEZ8" target="_blank">
+              <svg class="footer__icon-contact svg-stroke" width="15" height="18">
+                <use xlink:href="./images/sprites/icons.svg#icon-point"></use>
+              </svg>
               ул. Т.Г.Шевченко, 1
             </a>
           </li>
           <li class="footer__item-contact">
-            <a class="footer__link-contact link footer__link-contact--phone" href="tel:+380501112233">
+            <a class="footer__link-contact link" href="tel:+380501112233">
+              <svg class="footer__icon-contact svg-stroke" width="19" height="19">
+                <use xlink:href="./images/sprites/icons.svg#icon-phone"></use>
+              </svg>
               380501112233
             </a>
           </li>
           <li class="footer__item-contact">
-            <a class="footer__link-contact link footer__link-contact--letter" href="mailto:support@sfood.com">
+            <a class="footer__link-contact link" href="mailto:support@sfood.com">
+              <svg class="footer__icon-contact svg-stroke" width="20" height="18">
+                <use xlink:href="./images/sprites/icons.svg#icon-letter"></use>
+              </svg>
               support@sfood.com
             </a>
           </li>
         </ul>
         <ul class="footer__list-social">
           <li class="footer__item-social">
-            <a class="footer__link-social btn-svg" href="https://www.facebook.com/" target="_blank" aria-label="Фейсбук">
-              <svg class="footer__social-svg svg-fill" width="10" height="21">
+            <a class="footer__link-social btn-icon" href="https://www.facebook.com/" target="_blank" aria-label="Фейсбук">
+              <svg class="footer__icon-social svg-fill" width="10" height="21">
                 <use xlink:href="./images/sprites/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item-social">
-            <a class="footer__link-social btn-svg" href="https://twitter.com/" target="_blank" aria-label="Твиттер">
-              <svg class="footer__social-svg svg-fill" width="21" height="17">
+            <a class="footer__link-social btn-icon" href="https://twitter.com/" target="_blank" aria-label="Твиттер">
+              <svg class="footer__icon-social svg-fill" width="21" height="17">
                 <use xlink:href="./images/sprites/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item-social">
-            <a class="footer__link-social btn-svg" href="https://www.instagram.com/" target="_blank" aria-label="Инстаграм">
-              <svg class="footer__social-svg svg-fill" width="20" height="20">
+            <a class="footer__link-social btn-icon" href="https://www.instagram.com/" target="_blank" aria-label="Инстаграм">
+              <svg class="footer__icon-social svg-fill" width="20" height="20">
                 <use xlink:href="./images/sprites/icons.svg#icon-instagram"></use>
               </svg>
             </a>

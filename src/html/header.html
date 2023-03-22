@@ -1,47 +1,45 @@
-<header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a class="header__logo logo" href="#hero">
-        <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="200" height="39" loading="lazy">
-      </a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link link menu__link--active" href="#hero">
-              Главная
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#popular">
-              Блюда
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#footer">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header__list-btn">
-        <li class="header__item-btn">
-          <button class="header__btn btn-svg" type="button" aria-label="Поиск">
-            <svg class="header__btn-svg svg-stroke" width="19" height="19">
-              <use xlink:href="./images/sprites/icons.svg#icon-search"></use>
-            </svg>
-          </button>
+<header class="header" id="header">
+  <div class="header__container container">
+    <a class="header__logo logo" href="#header">
+      <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="200" height="39" loading="lazy">
+    </a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link link menu__link--active" href="#header">
+            Главная
+          </a>
         </li>
-        <li class="header__item-btn">
-          <button class="header__btn btn-svg" type="button" aria-label="Корзина">
-            <svg class="header__btn-svg svg-stroke" width="19" height="18">
-              <use xlink:href="./images/sprites/icons.svg#icon-cart"></use>
-            </svg>
-            <span class="header__btn-count">
-              4
-            </span>
-          </button>
+        <li class="menu__item">
+          <a class="menu__link link" href="#popular">
+            Блюда
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#footer">
+            Контакты
+          </a>
         </li>
       </ul>
-    </div>
+    </nav>
+    <ul class="user-nav">
+      <li class="user-nav__item">
+        <button class="user-nav__btn btn-icon" type="button" aria-label="Поиск">
+          <svg class="user-nav__icon svg-stroke" width="19" height="19">
+            <use xlink:href="./images/sprites/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="user-nav__item">
+        <button class="user-nav__btn btn-icon" type="button" aria-label="Корзина">
+          <svg class="user-nav__icon svg-stroke" width="19" height="18">
+            <use xlink:href="./images/sprites/icons.svg#icon-cart"></use>
+          </svg>
+          <span class="user-nav__btn-count">
+            4
+          </span>
+        </button>
+      </li>
+    </ul>
   </div>
 </header>
