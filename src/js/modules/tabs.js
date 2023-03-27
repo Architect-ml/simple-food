@@ -3,6 +3,7 @@ const categoriesListBtn = document.querySelector('.categories__list-btn');
 const categoriesBtn = document.querySelectorAll('.categories__btn');
 const categoriesItemCard = document.querySelectorAll('.categories__item-card');
 
+
 categoriesListBtn.addEventListener('click', (e) => {
   const target = e.target;
   if (target.classList.contains('categories__btn')) {

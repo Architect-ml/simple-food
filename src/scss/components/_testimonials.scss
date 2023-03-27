@@ -1,0 +1,148 @@
+.testimonials {
+  &__title {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__swiper-wrapper {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__avatar {
+    margin-right: 40px;
+    border-radius: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 570px;
+    padding: 0 40px;
+  }
+
+  &__quote {
+    position: relative;
+    margin-bottom: 30px;
+    font-style: italic;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 24px;
+      height: 19px;
+      display: block;
+      background-image: url('../images/icons/icon-quotes-1.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -40px;
+      width: 24px;
+      height: 19px;
+      display: block;
+      background-image: url('../images/icons/icon-quotes-2.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__author {
+    margin-bottom: 15px;
+    display: block;
+    color: $color-accent;
+  }
+
+  &__author-position {
+    display: block;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  &__swiper-nav {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 34px;
+    height: 34px;
+    border: 3px solid $color-tertiary;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-tertiary;
+    transition: box-shadow $transition-time, border-color $transition-time, background-color $transition-time, color $transition-time;
+
+    &:focus:not(:active) {
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+
+    &:hover {
+      border-color: $color-pseudo-accent-lt;
+      background-color: $color-pseudo-lt;
+      color: $color-pseudo-accent-lt;
+    }
+
+    &:active {
+      border-color: $color-pseudo-lt;
+      background-color: $color-pseudo-lt;
+      color: $color-pseudo-accent;
+    }
+  }
+
+  &__pagination {
+    width: auto;
+    margin: 0 23px;
+  }
+
+  &__bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: $color-tertiary;
+    transition: box-shadow $transition-time;
+
+    &:focus:not(:active) {
+      outline: transparent;
+      box-shadow: 0 0 0 2px $color-accent;
+    }
+
+    &:hover:not(:active) {
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+      background-color: $color-pseudo-lt;
+    }
+
+    &:active {
+      background-color: $color-pseudo-accent-lt;
+    }
+
+    &--active {
+      background-color: $color-accent;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .swiper-pagination-bullets {
+    width: auto;
+  }
+}

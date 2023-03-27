@@ -3,11 +3,12 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__logo {
-    margin-right: auto;
+    flex-basis: 100%;
   }
 }
 

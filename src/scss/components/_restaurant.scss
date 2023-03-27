@@ -1,0 +1,16 @@
+.restaurant {
+  &__title {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+}

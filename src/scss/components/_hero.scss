@@ -1,21 +1,16 @@
 .hero {
   &__inner {
     height: 61vh;
+    display: flex;
+    align-items: center;
     background-position: right center;
     background-size: contain;
     background-repeat: no-repeat;
-    // @supports (gap: 1px) {
-    //   background-image: url('../images/pictures/hero-bg.webp');
-    // }
   }
 
   &__content {
     width: 100%;
     max-width: 450px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   &__title {

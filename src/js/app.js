@@ -1,5 +1,4 @@
-import * as functions from './modules/functions.js';
-import * as tabs from './modules/tabs.js';
-
-
-
+import './modules/functions.js';
+import './modules/tabs.js';
+import './modules/smooth-scroll.js';
+import './modules/sliders.js';

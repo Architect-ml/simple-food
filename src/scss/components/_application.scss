@@ -1,0 +1,55 @@
+.application {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__list-link {
+    display: flex;
+  }
+
+  &__item-link {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    width: 120px;
+    height: 40px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--apple {
+      background-image: url('../images/icons/icon-apple.svg');
+    }
+
+    &--google {
+      background-image: url('../images/icons/icon-google.svg');
+    }
+  }
+
+  &__img {
+    width: 570px;
+    height: 380px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

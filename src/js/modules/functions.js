@@ -1,5 +1,5 @@
 //Removes the focus effects after click
-const rmFocus = document.querySelectorAll('.logo, .link, .btn, .btn-icon, .categories__btn');
+const rmFocus = document.querySelectorAll('.logo, .link, .btn, .btn-icon, .categories__btn, .testimonials__btn, .testimonials__bullet');
 const menuLink = document.querySelectorAll('.menu__link');
 
 rmFocus.forEach(e => {

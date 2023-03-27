@@ -1,7 +1,6 @@
 // Basic connections
 @import 'fonts';
 @import 'reset';
-@import 'libs';
 @import 'vars';
 @import 'global';
 
@@ -9,4 +8,8 @@
 @import './components/header';
 @import './components/hero';
 @import './components/categories';
+@import './components/features';
+@import './components/restaurant';
+@import './components/testimonials';
+@import './components/application';
 @import './components/footer';

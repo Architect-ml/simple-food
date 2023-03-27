@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-@include('html/head.html',{"title":"Сервис доставки еды Simple Food | Главная страница"})
+@include('./html/head.html',{"title":"Сервис доставки еды Simple Food | Главная страница"})
 <body>
   <div class="wrapper">
-    @include('html/header.html')
+    @include('./html/header.html')
     <h1 class="sr-only">
       Сервис доставки еды <span lang="en">Simple Food</span>
     </h1>
     <main class="main">
-      @include('html/hero.html')
-      @include('html/categories.html')
+      @include('./html/hero.html')
+      @include('./html/categories.html')
+      @include('./html/features.html')
+      @include('./html/restaurant.html')
+      @include('./html/testimonials.html')
+      @include('./html/application.html')
     </main>
-    @include('html/footer.html')
+    @include('./html/footer.html')
   </div>
 </body>
 </html>
