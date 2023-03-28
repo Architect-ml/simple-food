@@ -29,19 +29,26 @@
   }
 
   &__link {
-    width: 120px;
     height: 40px;
     display: block;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: border-radius $transition-time, box-shadow $transition-time;
 
     &--apple {
+      width: 120px;
       background-image: url('../images/icons/icon-apple.svg');
     }
 
     &--google {
+      width: 135px;
       background-image: url('../images/icons/icon-google.svg');
+    }
+
+    &:focus:not(:active) {
+      border-radius: 7px;
+      box-shadow: 0 0 0 2px $color-pseudo-border;
     }
   }
 
