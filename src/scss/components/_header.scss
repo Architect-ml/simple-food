@@ -60,7 +60,7 @@
     background-repeat: no-repeat;
 
     &:hover:not(:active) {
-      .header__btn-count {
+      .user-nav__btn-count {
         background-color: $color-neutral-lt;
         color: $color-pseudo-accent;
       }
