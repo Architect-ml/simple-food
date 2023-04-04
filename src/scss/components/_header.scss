@@ -13,7 +13,7 @@
 }
 
 .menu {
-  margin-right: 50px;
+  margin-right: calc($ui-step * 10);
 
   &__list {
     display: flex;
@@ -22,7 +22,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 45px;
+      margin-right: calc($ui-step * 9);
     }
   }
 
@@ -42,7 +42,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: calc($ui-step * 2);
     }
   }
 

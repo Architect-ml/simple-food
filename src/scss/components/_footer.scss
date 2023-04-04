@@ -1,16 +1,16 @@
 .footer {
   &__content {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: calc($ui-step * 12);
   }
 
   &__subscribe {
     width: 200px;
-    margin-right: 70px;
+    margin-right: calc($ui-step * 14);
   }
 
   &__logo {
-    margin-bottom: 30px;
+    margin-bottom: calc($ui-step * 6);
     display: block;
   }
 
@@ -22,7 +22,7 @@
   &__form-input {
     width: 100%;
     padding: 13px 15px;
-    margin-bottom: 13px;
+    margin-bottom: calc($ui-step * 2);
     border: 1px solid $color-tertiary;
     border-radius: 5px;
     background-color: $color-neutral-lt;
@@ -52,11 +52,11 @@
   }
 
   &__form-icon {
-    margin-right: 15px;
+    margin-right: calc($ui-step * 3);
   }
 
   &__list-nav {
-    margin-right: 70px;
+    margin-right: calc($ui-step * 14);
     display: grid;
     grid-template-columns: 223px 159px 187px;
   }
@@ -68,17 +68,17 @@
   }
 
   &__list-contact {
-    margin-bottom: 15px;
+    margin-bottom: calc($ui-step * 3);
   }
 
   &__item-contact {
     &:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: calc($ui-step * 3);
     }
   }
 
   &__icon-contact {
-    margin-right: 10px;
+    margin-right: calc($ui-step * 2);
   }
 
   &__link-contact {
@@ -94,7 +94,7 @@
 
   &__item-social {
     &:not(:last-child) {
-      margin-right: 13px;
+      margin-right: calc($ui-step * 3);
     }
   }
 

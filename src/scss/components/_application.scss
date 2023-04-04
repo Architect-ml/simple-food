@@ -11,11 +11,11 @@
   }
 
   &__title {
-    margin-bottom: 45px;
+    margin-bottom: calc($ui-step * 9);
   }
 
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: calc($ui-step * 6);
   }
 
   &__list-link {
@@ -24,7 +24,7 @@
 
   &__item-link {
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: calc($ui-step * 6);
     }
   }
 

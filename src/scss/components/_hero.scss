@@ -21,13 +21,13 @@
   }
 
   &__title-accent {
-    margin-bottom: 20px;
+    margin-bottom: calc($ui-step * 4);
     display: inherit;
     color: $color-accent;
   }
 
   &__text {
-    margin-bottom: 20px;
+    margin-bottom: calc($ui-step * 4);
     display: inherit;
     font-weight: 400;
     font-size: 20px;
@@ -42,7 +42,7 @@
 
   &__item-link {
     &:not(:last-child) {
-      margin-right: 34px;
+      margin-right: calc($ui-step * 7);
     }
   }
 

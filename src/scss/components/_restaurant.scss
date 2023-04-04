@@ -1,6 +1,6 @@
 .restaurant {
   &__title {
-    margin-bottom: 45px;
+    margin-bottom: calc($ui-step * 9);
     text-align: center;
   }
 

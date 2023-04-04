@@ -1,11 +1,11 @@
 .testimonials {
   &__title {
-    margin-bottom: 45px;
+    margin-bottom: calc($ui-step * 9);
     text-align: center;
   }
 
   &__swiper-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: calc($ui-step * 10);
   }
 
   &__item {
@@ -15,7 +15,7 @@
   }
 
   &__avatar {
-    margin-right: 40px;
+    margin-right: calc($ui-step * 8);
     border-radius: 100%;
   }
 
@@ -27,7 +27,7 @@
 
   &__quote {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: calc($ui-step * 6);
     font-style: italic;
 
     &::before {
@@ -60,7 +60,7 @@
   }
 
   &__author {
-    margin-bottom: 15px;
+    margin-bottom: calc($ui-step * 3);
     display: block;
     color: $color-accent;
   }
@@ -72,7 +72,7 @@
   }
 
   &__swiper-nav {
-    margin-bottom: 2px;
+    margin-bottom: 2px; // Hack for border on focus
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
 
   &__pagination {
     width: auto;
-    margin: 0 23px;
+    margin: 0 calc($ui-step * 5);
   }
 
   &__bullet {
@@ -138,7 +138,7 @@
     }
 
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: calc($ui-step * 3);
     }
   }
 
