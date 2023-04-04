@@ -1,0 +1,35 @@
+.card-food {
+  height: 100%;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px $color-tertiary-lt;
+  background-color: $color-neutral-lt;
+  transition: box-shadow $transition-time;
+
+  &__img {
+    margin: 0 auto 10px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $color-secondary;
+  }
+
+  &:hover:not(:active) {
+    box-shadow: 0 0 0 1px $color-accent;
+  }
+}

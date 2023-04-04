@@ -7,7 +7,7 @@
         </a>
         <form class="footer__form">
           <label class="footer__form-lable" aria-label="Ваш email">
-            <input class="footer__form-input" name="email" type="email" placeholder="Ваш email" pattern="^[а-яА-ЯёЁa-zA-Z0-9\s]+$" required oninvalid="setCustomValidity('Пожалуйста, введите Ваш email')" oninput="setCustomValidity('')">
+            <input class="footer__form-input" name="email" type="email" placeholder="Ваш email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required oninvalid="setCustomValidity('Пожалуйста, введите Ваш email')" oninput="setCustomValidity('')">
           </label>
           <button class="footer__form-btn btn" type="submit">
             <svg class="footer__form-icon svg-fill" width="15" height="14">
