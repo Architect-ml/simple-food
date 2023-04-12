@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     background-position: left center;
-    background-size: contain;
+    background-size: 440px 585px;
     background-repeat: no-repeat;
   }
 
@@ -28,16 +28,14 @@
   }
 
   &__item-benefits {
-    &:not(:last-child) {
-      margin-bottom: calc($ui-step * 3);
-    }
-  }
-
-  &__benefits {
     display: inline-flex;
     align-items: center;
     font-size: 24px;
     color: $color-secondary;
+
+    &:not(:last-child) {
+      margin-bottom: calc($ui-step * 3);
+    }
 
     &::before {
       content: "";
@@ -60,5 +58,9 @@
     &--cafe::before {
       background-image: url('../images/icons/icon-cafe.svg');
     }
+  }
+
+  &__text-benefits {
+    flex: 1 1 min-content;
   }
 }

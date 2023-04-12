@@ -9,13 +9,16 @@
       </p>
       <ul class="application__list-link">
         <li class="application__item-link">
-          <a class="application__link application__link--apple" href="https://www.apple.com/app-store/" rel="noreferrer" target="_blank" aria-label="Скачать приложение Simple Food из App Store"></a>
+          <a class="application__link application__link--apple" href="https://www.apple.com/app-store/" rel="noopener noreferrer" target="_blank" aria-label="Скачать приложение Simple Food из App Store"></a>
         </li>
-        <li class="application__item">
-          <a class="application__link application__link--google" href="https://play.google.com/" rel="noreferrer" target="_blank" aria-label="Скачать приложение SimpleFood из Google Play"></a>
+        <li class="application__item-link">
+          <a class="application__link application__link--google" href="https://play.google.com/" rel="noopener noreferrer" target="_blank" aria-label="Скачать приложение SimpleFood из Google Play"></a>
         </li>
       </ul>
     </div>
-    <div class="application__img" style="background-image: url('../images/application/img-application.jpg');"></div>
+    <picture>
+      <source srcset="./images/application/img-application.webp" type="image/webp">
+      <img class="application__img" src="./images/application/img-application.jpg" alt="Приложение для мобильного телефона SimpleFood" width="570" height="380" loading="lazy">
+    </picture>
   </div>
 </section>

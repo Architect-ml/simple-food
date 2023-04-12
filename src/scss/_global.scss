@@ -79,7 +79,7 @@ body {
   }
 }
 
-.link {
+.link-states {
   transition: border-radius $transition-time, box-shadow $transition-time, color $transition-time, text-shadow $transition-time;
 
   &:focus:not(:active) {
@@ -134,7 +134,7 @@ body {
   }
 }
 
-.btn-icon {
+.btn-states {
   transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
 
   &:focus:not(:active) {

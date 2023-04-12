@@ -1,10 +1,10 @@
 .hero {
   &__inner {
-    height: 61vh;
+    min-height: 61vh;
     display: flex;
     align-items: center;
     background-position: right center;
-    background-size: contain;
+    background-size: 560px 660px;
     background-repeat: no-repeat;
   }
 
@@ -15,9 +15,7 @@
 
   &__title {
     font-size: 66px;
-    line-height: 1.3;
     text-transform: uppercase;
-    color: $color-secondary;
   }
 
   &__title-accent {

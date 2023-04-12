@@ -6,11 +6,13 @@
   }
 
   &__list-btn {
-    margin-bottom: calc($ui-step * 9);
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item-btn {
+    margin-bottom: calc($ui-step * 9);
+
     &:not(:last-child) {
       margin-right: calc($ui-step * 4);
     }
