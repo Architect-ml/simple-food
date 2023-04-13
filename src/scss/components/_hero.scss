@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     background-position: right center;
-    background-size: 560px 660px;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
@@ -14,7 +14,10 @@
   }
 
   &__title {
+    font-weight: 500;
     font-size: 66px;
+    line-height: 1.3;
+    color: $color-secondary;
     text-transform: uppercase;
   }
 

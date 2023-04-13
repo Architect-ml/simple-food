@@ -10,6 +10,14 @@
   background-color: $color-neutral-lt;
   transition: box-shadow $transition-time;
 
+  &__link {
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
   &__img {
     margin-bottom: calc($ui-step * 2);
   }
