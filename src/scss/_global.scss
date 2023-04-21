@@ -80,7 +80,7 @@ body {
 }
 
 .link-states {
-  transition: border-radius $transition-time, box-shadow $transition-time, color $transition-time, text-shadow $transition-time;
+  transition: border-radius, box-shadow $transition-time, color $transition-time, text-shadow $transition-time;
 
   &:focus:not(:active) {
     border-radius: 5px;
@@ -131,23 +131,5 @@ body {
   &:active {
     background-color: $color-pseudo-lt;
     color: $color-accent
-  }
-}
-
-.btn-states {
-  transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
-
-  &:focus:not(:active) {
-    background-color: $color-pseudo-accent-tr;
-    box-shadow: 0 0 0 2px $color-pseudo-border;
-  }
-
-  &:hover:not(:active) {
-    background-color: $color-pseudo-accent;
-    color: $color-neutral-lt;
-  }
-
-  &:active {
-    background-color: $color-pseudo-lt;
   }
 }

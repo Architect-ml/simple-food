@@ -60,15 +60,16 @@
   }
 
   &__author {
-    margin-bottom: calc($ui-step * 3);
     display: block;
     color: $color-accent;
   }
 
   &__author-position {
+    margin-top: calc($ui-step * 3);
     display: block;
     font-size: 14px;
     line-height: 130%;
+    color: $color-primary;
   }
 
   &__swiper-nav {

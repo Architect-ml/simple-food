@@ -1,0 +1,61 @@
+.address {
+  &__list-contact {
+    margin-bottom: calc($ui-step * 3);
+  }
+
+  &__item-contact {
+    &:not(:last-child) {
+      margin-bottom: calc($ui-step * 3);
+    }
+  }
+
+  &__icon-contact {
+    margin-right: calc($ui-step * 2);
+  }
+
+  &__link-contact {
+    font-size: 16px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item-social {
+    margin-bottom: calc($ui-step * 2);
+
+    &:not(:last-child) {
+      margin-right: calc($ui-step * 3);
+    }
+  }
+
+  &__link-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+    background-color: $color-tertiary-lt;
+    transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
+
+    &:focus:not(:active) {
+      background-color: $color-pseudo-accent-tr;
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+
+    &:hover:not(:active) {
+      background-color: $color-pseudo-accent;
+      color: $color-neutral-lt;
+    }
+
+    &:active {
+      background-color: $color-pseudo-lt;
+      color: $color-pseudo-accent;
+    }
+  }
+}

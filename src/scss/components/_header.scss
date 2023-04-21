@@ -57,6 +57,21 @@
     background-position: center;
     background-size: 19px 19px;
     background-repeat: no-repeat;
+    transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
+
+    &:focus:not(:active) {
+      background-color: $color-pseudo-accent-tr;
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+
+    &:hover:not(:active) {
+      background-color: $color-pseudo-accent;
+      color: $color-neutral-lt;
+    }
+
+    &:active {
+      background-color: $color-pseudo-lt;
+    }
 
     &:hover:not(:active) {
       .user-nav__btn-count {

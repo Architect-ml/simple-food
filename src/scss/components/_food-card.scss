@@ -13,8 +13,17 @@
   &__link {
     transition: transform $transition-time;
 
+    &:focus:not(:active) {
+      border-radius: 5px;
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      opacity: 0.5;
     }
   }
 
