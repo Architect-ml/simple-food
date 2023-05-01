@@ -1,101 +1,25 @@
 .header {
   padding: 60px 0;
 
+  @include tablet {
+    padding: 30px 0;
+  }
+
+  @include mobile {
+    padding: 15px 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}
 
-.menu {
-  margin-right: calc($ui-step * 10);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-
-  &__list {
+  &__menu {
+    margin-right: calc($ui-step * 10);
     display: flex;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: calc($ui-step * 9);
-    }
-  }
-
-  &__link {
-    font-size: 18px;
-    line-height: 1.2;
-
-    &--active {
-      color: $color-accent;
-      pointer-events: none;
-    }
-  }
-}
-
-.user-nav {
-  display: flex;
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: calc($ui-step * 2);
-    }
-  }
-
-  &__btn {
-    position: relative;
-    width: 44px;
-    height: 44px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    background-position: center;
-    background-size: 19px 19px;
-    background-repeat: no-repeat;
-    transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
-
-    &:focus:not(:active) {
-      background-color: $color-pseudo-accent-tr;
-      box-shadow: 0 0 0 2px $color-pseudo-border;
-    }
-
-    &:hover:not(:active) {
-      background-color: $color-pseudo-accent;
-      color: $color-neutral-lt;
-    }
-
-    &:active {
-      background-color: $color-pseudo-lt;
-    }
-
-    &:hover:not(:active) {
-      .user-nav__btn-count {
-        background-color: $color-neutral-lt;
-        color: $color-pseudo-accent;
-      }
-    }
-  }
-
-  &__btn-count {
-    position: absolute;
-    top: 9px;
-    left: 26px;
-    min-width: 14px;
-    height: 14px;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: $color-accent;
-    font-size: 10px;
-    line-height: 1.2;
-    color: $color-neutral-lt;
-    transition: background-color $transition-time, color $transition-time;
+    flex-grow: 1;
   }
 }

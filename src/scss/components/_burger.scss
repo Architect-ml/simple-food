@@ -1,0 +1,58 @@
+.burger {
+  display: none;
+  position: relative;
+  width: $burger-width;
+  height: $burger-height;
+  border-radius: 5px;
+  padding: 22px 22px;
+  color: $color-secondary;
+  transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
+
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    width: $burger-width;
+    height: $burger-line-height;
+    background-color: currentColor;
+  }
+
+  &::before {
+    content: '';
+    top: 11px;
+  }
+
+  &::after {
+    content: '';
+    top: calc(100% - (11px));
+  }
+
+  &__line {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    width: $burger-width;
+    height: $burger-line-height;
+    background-color: currentColor;
+  }
+
+  &:focus:not(:active) {
+    background-color: $color-pseudo-accent-tr;
+    box-shadow: 0 0 0 2px $color-pseudo-border;
+  }
+
+  &:hover:not(:active) {
+    background-color: $color-pseudo-accent;
+    color: $color-neutral-lt;
+  }
+
+  &:active {
+    background-color: $color-pseudo-lt;
+  }
+
+  @include tablet-small {
+    display: block;
+  }
+}

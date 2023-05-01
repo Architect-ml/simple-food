@@ -2,15 +2,89 @@
   &__title {
     margin-bottom: calc($ui-step * 9);
     text-align: center;
+
+    @include tablet-small {
+      margin-bottom: calc($ui-step * 7);
+    }
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    @include desktop-small {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
+
+    @include tablet-small {
+      grid-template-columns: repeat(1, auto);
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__item {
-    grid-column: 4 span;
+    width: 100%;
+    max-width: 370px;
+  }
+
+  &__pagination {
+    text-align: center;
+  }
+
+  &__swiper {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__slide {
+    margin-bottom: calc($ui-step * 6);
+  }
+
+  &__pagination {
+    width: auto;
+    margin: 0 calc($ui-step * 5);
+  }
+
+  &__bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: $color-tertiary;
+    transition: box-shadow $transition-time;
+
+    &:focus:not(:active) {
+      outline: transparent;
+      box-shadow: 0 0 0 2px $color-accent;
+    }
+
+    &:hover:not(:active) {
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+      background-color: $color-pseudo-lt;
+    }
+
+    &:active {
+      background-color: $color-pseudo-accent-lt;
+    }
+
+    &--active {
+      background-color: $color-accent;
+    }
+
+    &:not(:last-child) {
+      margin-right: calc($ui-step * 3);
+    }
+  }
+
+  .swiper-pagination-bullets {
+    width: auto;
   }
 }

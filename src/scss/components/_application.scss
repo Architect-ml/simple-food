@@ -8,14 +8,28 @@
   &__content {
     width: 100%;
     max-width: 540px;
+
+    @include tablet {
+      max-width: 500px;
+      margin-right: calc($ui-step * 2);
+    }
   }
 
   &__title {
     margin-bottom: calc($ui-step * 9);
+
+    @include tablet {
+      margin-bottom: calc($ui-step * 3);
+    }
   }
 
   &__text {
     margin-bottom: calc($ui-step * 6);
+
+    @include mobile {
+      margin-bottom: calc($ui-step * 3);
+      font-size: 14px;
+    }
   }
 
   &__list-link {
@@ -49,6 +63,12 @@
     &:focus:not(:active) {
       border-radius: 7px;
       box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+  }
+
+  &__img {
+    @include tablet-small {
+      display: none;
     }
   }
 }

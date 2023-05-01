@@ -2,17 +2,24 @@
 @import 'fonts';
 @import 'reset';
 @import 'vars';
+@import 'mixins';
 @import 'global';
 
-// Component connections
+// Components connections
+@import './components/menu';
+@import './components/user-nav';
+@import './components/mobile-menu';
+@import './components/burger';
+@import './components/food-card';
+@import './components/restaurant-card';
+@import './components/address';
+
+// Sections connections
 @import './components/header';
 @import './components/hero';
 @import './components/categories';
-@import './components/food-card';
 @import './components/features';
 @import './components/restaurant';
-@import './components/restaurant-card';
 @import './components/testimonials';
 @import './components/application';
 @import './components/footer';
-@import './components/address';

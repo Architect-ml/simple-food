@@ -1,16 +1,36 @@
 .hero {
   &__inner {
+    position: relative;
+    z-index: 10;
     min-height: 61vh;
     display: flex;
     align-items: center;
     background-position: right center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include tablet {
+      min-height: 45vh;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(249, 250, 255, 0.85);
+      }
+    }
   }
 
   &__content {
     width: 100%;
     max-width: 450px;
+
+    @include mobile {
+      max-width: 375px;
+    }
   }
 
   &__title {
@@ -19,22 +39,24 @@
     line-height: 1.3;
     color: $color-secondary;
     text-transform: uppercase;
+
+    @include mobile {
+      font-size: 40px;
+    }
   }
 
   &__title-accent {
     margin-bottom: calc($ui-step * 4);
     display: inherit;
     color: $color-accent;
+
+    @include mobile {
+      margin-bottom: calc($ui-step * 2);
+    }
   }
 
   &__text {
     margin-bottom: calc($ui-step * 4);
-    display: inherit;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.5;
-    text-transform: initial;
-    color: $color-primary;
   }
 
   &__list-link {

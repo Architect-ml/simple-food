@@ -1,0 +1,107 @@
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-200%);
+  visibility: hidden;
+  transition: transform $transition-time, visibility $transition-time;
+
+  &--active {
+    transform: none;
+    visibility: visible;
+  }
+
+  &__content {
+    width: 80%;
+    height: 100vh;
+    padding: 25px 15px;
+    background-color: $color-neutral-lt;
+  }
+
+  &__header {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EEEFF3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: calc($ui-step * 4);
+    pointer-events: none;
+  }
+
+  &__btn {
+    position: relative;
+    width: $burger-width;
+    height: $burger-height;
+    border-radius: 5px;
+    padding: 22px 22px;
+    color: $color-secondary;
+    transition: background-color $transition-time, box-shadow $transition-time, color $transition-time;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      width: $burger-width;
+      height: $burger-line-height;
+      background-color: currentColor;
+    }
+
+    &::before {
+      content: '';
+      top: 50%;
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      content: '';
+      top: 50%;
+      transform: rotate(-135deg);
+    }
+
+    &:focus:not(:active) {
+      background-color: $color-pseudo-accent-tr;
+      box-shadow: 0 0 0 2px $color-pseudo-border;
+    }
+
+    &:hover:not(:active) {
+      background-color: $color-pseudo-accent;
+      color: $color-neutral-lt;
+    }
+
+    &:active {
+      background-color: $color-pseudo-lt;
+    }
+  }
+
+  &__nav {
+    padding: 10px 0;
+    border-bottom: 1px solid #EEEFF3;
+  }
+
+  &__link {
+    padding: 10px 0;
+    display: block;
+
+    &--active {
+      color: $color-accent;
+      pointer-events: none;
+    }
+  }
+
+  &__address {
+    padding: 15px 0;
+  }
+
+  @include tablet-small {
+    display: block;
+  }
+}

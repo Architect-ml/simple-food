@@ -30,3 +30,29 @@ $font-family: 'Rubik', sans-serif;
 
 // Transition
 $transition-time: 0.3s;
+
+// Breakpoints
+$desktop: 1440px;
+$desktop-small: 1200px;
+$tablet: 1024px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-small: 375px;
+
+// Burger setings
+$burger-width: 30px;
+$burger-height: 20px;
+$burger-line-height: 2px;
+
+// Settings for Swiper scrollbar
+:root {
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: auto;
+  --swiper-scrollbar-bottom: -20px;
+  --swiper-scrollbar-left: auto;
+  --swiper-scrollbar-right: 4px;
+  --swiper-scrollbar-sides-offset: 1%;
+  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(255, 122, 80, 0.8);
+  --swiper-scrollbar-size: 5px;
+}

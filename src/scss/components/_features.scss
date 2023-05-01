@@ -1,5 +1,13 @@
 .features {
+  &__section {
+    @include tablet-small {
+      padding-bottom: 0;
+    }
+  }
+
   &__inner {
+    position: relative;
+    z-index: 10;
     min-height: 585px;
     margin: 0 calc($ui-step * 14);
     display: flex;
@@ -7,12 +15,35 @@
     background-position: left center;
     background-size: 440px 585px;
     background-repeat: no-repeat;
+
+    @include desktop-small {
+      margin: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(249, 250, 255, 0.85);
+      }
+    }
+
+    @include tablet-small {
+      min-height: 462px;
+      background-size: 348px 462px;
+    }
   }
 
   &__content {
     width: 100%;
     max-width: 470px;
     margin-left: auto;
+
+    @include tablet-small {
+      margin-right: auto;
+    }
   }
 
   &__title {
@@ -25,12 +56,15 @@
 
   &__list-benefits {
     margin-bottom: calc($ui-step * 6);
+
+    @include tablet-small {
+      margin-bottom: calc($ui-step * 4);
+    }
   }
 
   &__item-benefits {
     display: inline-flex;
     align-items: center;
-    font-size: 24px;
     color: $color-secondary;
 
     &:not(:last-child) {
@@ -62,5 +96,10 @@
 
   &__text-benefits {
     flex: 1 1 min-content;
+    font-size: 24px;
+
+    @include tablet-small {
+      font-size: 18px;
+    }
   }
 }

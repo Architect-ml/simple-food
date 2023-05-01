@@ -1,50 +1,53 @@
 <section class="categories section" id="categories">
-  <div class="container">
+  <div class="categories__container container">
     <h2 class="categories__title title">
       Популярные категории
     </h2>
-    <ul class="categories__list-btn">
-      <li class="categories__item-btn">
-        <button class="categories__btn categories__btn--active" type="button" data-path="burger">
-          <svg class="categories__icon-btn svg-fill" width="44" height="44">
-            <use xlink:href="./images/sprites/icons.svg#icon-burger"></use>
-          </svg>
-          Бургеры
-        </button>
-      </li>
-      <li class="categories__item-btn">
-        <button class="categories__btn" type="button" data-path="pizza">
-          <svg class="categories__icon-btn svg-fill" width="44" height="44">
-            <use xlink:href="./images/sprites/icons.svg#icon-pizza"></use>
-          </svg>
-          Пицца
-        </button>
-      </li>
-      <li class="categories__item-btn">
-        <button class="categories__btn" type="button" data-path="sandvich">
-          <svg class="categories__icon-btn svg-fill" width="44" height="44">
-            <use xlink:href="./images/sprites/icons.svg#icon-sandvich"></use>
-          </svg>
-          Сендвичи
-        </button>
-      </li>
-      <li class="categories__item-btn ">
-        <button class="categories__btn" type="button" data-path="asia">
-          <svg class="categories__icon-btn svg-fill" width="44" height="44">
-            <use xlink:href="./images/sprites/icons.svg#icon-asia"></use>
-          </svg>
-          Азиатская кухня
-        </button>
-      </li>
-      <li class="categories__item-btn">
-        <button class="categories__btn" type="button" data-path="set">
-          <svg class="categories__icon-btn svg-fill" width="44" height="44">
-            <use xlink:href="./images/sprites/icons.svg#icon-set"></use>
-          </svg>
-          Cеты
-        </button>
-      </li>
-    </ul>
+    <div class="categories__swiper">
+      <ul class="categories__list-btn swiper-wrapper">
+        <li class="categories__item-btn swiper-slide">
+          <button class="categories__btn categories__btn--active btn" type="button" data-path="burger">
+            <svg class="categories__icon-btn svg-fill" width="44" height="44">
+              <use xlink:href="./images/sprites/icons.svg#icon-burger"></use>
+            </svg>
+            Бургеры
+          </button>
+        </li>
+        <li class="categories__item-btn swiper-slide">
+          <button class="categories__btn btn" type="button" data-path="pizza">
+            <svg class="categories__icon-btn svg-fill" width="44" height="44">
+              <use xlink:href="./images/sprites/icons.svg#icon-pizza"></use>
+            </svg>
+            Пицца
+          </button>
+        </li>
+        <li class="categories__item-btn swiper-slide">
+          <button class="categories__btn btn" type="button" data-path="sandvich">
+            <svg class="categories__icon-btn svg-fill" width="44" height="44">
+              <use xlink:href="./images/sprites/icons.svg#icon-sandvich"></use>
+            </svg>
+            Сендвичи
+          </button>
+        </li>
+        <li class="categories__item-btn swiper-slide">
+          <button class="categories__btn btn" type="button" data-path="asia">
+            <svg class="categories__icon-btn svg-fill" width="44" height="44">
+              <use xlink:href="./images/sprites/icons.svg#icon-asia"></use>
+            </svg>
+            Азиатская кухня
+          </button>
+        </li>
+        <li class="categories__item-btn swiper-slide">
+          <button class="categories__btn btn" type="button" data-path="set">
+            <svg class="categories__icon-btn svg-fill" width="44" height="44">
+              <use xlink:href="./images/sprites/icons.svg#icon-set"></use>
+            </svg>
+            Cеты
+          </button>
+        </li>
+      </ul>
+      <div class="swiper-scrollbar"></div>
+    </div>
     <ul class="categories__list-card">
       <li class="categories__item-card categories__item-card--visible" data-target="pizza">
         <article class="food-card">
@@ -156,7 +159,7 @@
           </button>
         </article>
       </li>
-      <li class="categories__item-card categories__item-card--visible" data-target="asia">
+      <li class="categories__item-card categories__item-card--visible block" data-target="asia">
         <article class="food-card">
           <a class="food-card__link" href="#" title="Перейти на страницу товара">
             <picture>
@@ -178,7 +181,7 @@
           </button>
         </article>
       </li>
-      <li class="categories__item-card categories__item-card--visible" data-target="asia">
+      <li class="categories__item-card categories__item-card--visible block" data-target="asia">
         <article class="food-card">
           <a class="food-card__link" href="#" title="Перейти на страницу товара">
             <picture>
@@ -200,7 +203,7 @@
           </button>
         </article>
       </li>
-      <li class="categories__item-card categories__item-card--visible" data-target="set">
+      <li class="categories__item-card categories__item-card--visible block" data-target="set">
         <article class="food-card">
           <a class="food-card__link" href="#" title="Перейти на страницу товара">
             <picture>
@@ -222,7 +225,7 @@
           </button>
         </article>
       </li>
-      <li class="categories__item-card categories__item-card--visible" data-target="set">
+      <li class="categories__item-card categories__item-card--visible block" data-target="set">
         <article class="food-card">
           <a class="food-card__link" href="#" title="Перейти на страницу товара">
             <picture>
@@ -244,7 +247,7 @@
           </button>
         </article>
       </li>
-      <li class="categories__item-card categories__item-card--visible" data-target="set">
+      <li class="categories__item-card categories__item-card--visible block" data-target="set">
         <article class="food-card">
           <a class="food-card__link" href="#" title="Перейти на страницу товара">
             <picture>

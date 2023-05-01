@@ -1,0 +1,43 @@
+// Detect a touch device
+@mixin touch-device {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+
+// Mixins for media queries
+@mixin desktop {
+  @media (max-width: ($desktop)) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media (max-width: ($desktop-small)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: ($tablet)) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media (max-width: ($tablet-small)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: ($mobile)) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: ($mobile-small)) {
+    @content;
+  }
+}

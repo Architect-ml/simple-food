@@ -1,0 +1,25 @@
+.menu {
+  &__list {
+    display: flex;
+
+    @include tablet-small {
+      display: none;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: calc($ui-step * 9);
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.2;
+
+    &--active {
+      color: $color-accent;
+      pointer-events: none;
+    }
+  }
+}

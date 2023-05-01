@@ -1,6 +1,6 @@
 <header class="header" id="header">
   <div class="header__container container">
-    <nav class="menu">
+    <nav class="header__menu menu">
       <a class="logo" href="#header">
         <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="200" height="39">
       </a>
@@ -41,5 +41,88 @@
         </button>
       </li>
     </ul>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__line"></span>
+    </button>
+    <div class="mobile-menu">
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__header">
+          <a class="mobile-menu__logo logo" href="#">
+            <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="200" height="39">
+          </a>
+          <button class="mobile-menu__btn" type="button" aria-label="Закрыть меню" aria-expanded="true"></button>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link-states mobile-menu__link--active" href="#header">
+                Главная
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link-states" href="#popular">
+                Блюда
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link-states" href="#footer">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu__address address">
+          <ul class="address__list-contact">
+            <li class="address__item-contact">
+              <a class="address__link-contact link-states" href="https://goo.gl/maps/dEmzSAdLBjNBYEEZ8" rel="noopener noreferrer" target="_blank">
+                <svg class="address__icon-contact svg-stroke" width="15" height="18">
+                  <use xlink:href="./images/sprites/icons.svg#icon-test"></use>
+                </svg>
+                ул. Т.Г.Шевченко, 1
+              </a>
+            </li>
+            <li class="address__item-contact">
+              <a class="address__link-contact link-states" href="tel:+380501112233">
+                <svg class="address__icon-contact svg-stroke" width="19" height="19">
+                  <use xlink:href="./images/sprites/icons.svg#icon-phone"></use>
+                </svg>
+                380501112233
+              </a>
+            </li>
+            <li class="address__item-contact">
+              <a class="address__link-contact link-states" href="mailto:support@sfood.com">
+                <svg class="address__icon-contact svg-stroke" width="20" height="18">
+                  <use xlink:href="./images/sprites/icons.svg#icon-letter"></use>
+                </svg>
+                support@sfood.com
+              </a>
+            </li>
+          </ul>
+          <ul class="address__list-social">
+            <li class="address__item-social">
+              <a class="address__link-social" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" aria-label="Перейти на Фейсбук">
+                <svg class="address__icon-social svg-fill" width="10" height="21">
+                  <use xlink:href="./images/sprites/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="address__item-social">
+              <a class="address__link-social" href="https://twitter.com/" rel="noopener noreferrer" target="_blank" aria-label="Перейти в Твиттер">
+                <svg class="address__icon-social svg-fill" width="21" height="17">
+                  <use xlink:href="./images/sprites/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="address__item-social">
+              <a class="address__link-social" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" aria-label="Перейти в Инстаграм">
+                <svg class="address__icon-social svg-fill" width="20" height="20">
+                  <use xlink:href="./images/sprites/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
   </div>
 </header>
