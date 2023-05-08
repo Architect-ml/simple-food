@@ -47,14 +47,3 @@ const testimonialsSliderMobile = new Swiper('.testimonials__mobile-swiper', {
     prevEl: '.testimonials__mobile-btn-prev',
   }
 });
-
-
-
-
-
-
-// if (window.matchMedia("(max-width: 768px)").matches) {
-//   /* the viewport is at least 400 pixels wide */
-// } else {
-//   /* the viewport is less than 400 pixels wide */
-// }

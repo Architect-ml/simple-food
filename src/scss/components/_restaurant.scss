@@ -19,10 +19,6 @@
     }
 
     @include tablet-small {
-      grid-template-columns: repeat(1, auto);
-    }
-
-    @include mobile {
       display: none;
     }
   }
@@ -39,7 +35,7 @@
   &__swiper {
     display: none;
 
-    @include mobile {
+    @include tablet-small {
       display: block;
     }
   }
